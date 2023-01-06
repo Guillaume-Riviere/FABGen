@@ -109,6 +109,7 @@ if args.go:
 	os.chdir(args.out)
 	os.system(f"go mod init {go_gen._name}")
 	os.system("go fmt bind.go")
+	os.system("go mod tidy")
 	os.system("goimports -w bind.go")
 
 	try:
