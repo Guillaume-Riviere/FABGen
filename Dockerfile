@@ -23,5 +23,6 @@ RUN apt-get install -y git
 #RUN git clone https://github.com/algosup/2022-2023-project-3-harfang3d-binding-Project-6-group.git
 
 COPY . ./app/
+WORKDIR /app
 
 # CMD ["/bin/bash"]
